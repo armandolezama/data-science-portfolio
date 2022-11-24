@@ -1,0 +1,36 @@
+Pendiente por leer:
+https://www.geeksforgeeks.org/statistical-functions-python-set-1averages-measure-central-location/?ref=rp
+
+https://machinelearningmastery.com/a-gentle-introduction-to-the-law-of-large-numbers-in-machine-learning/#:~:text=The%20law%20of%20large%20numbers%20supports%20the%20intuition%20that%20the,the%20increase%20in%20sample%20size.
+
+https://www.geeksforgeeks.org/python-non-central-t-distribution-in-statistics/?ref=rp
+
+https://www.geeksforgeeks.org/python-non-central-f-distribution-in-statistics/?ref=rp
+
+https://www.geeksforgeeks.org/python-non-central-chi-squared-distribution-in-statistics/?ref=rp
+
+https://www.geeksforgeeks.org/ml-raw-and-central-moments/?ref=rp
+
+https://www.geeksforgeeks.org/python-split-dictionary-values-on-size-limit-of-values/?ref=rp
+
+https://www.geeksforgeeks.org/python-sympy-limit-method/?ref=rp
+
+https://www.geeksforgeeks.org/python-handling-recursion-limit/?ref=rp
+
+
+http://econowmics.com/python-law-of-large-numbers-dice-roll/
+
+https://jbhender.github.io/Stats506/F18/GP/Group14.html
+
+https://docs.pymc.io/en/v3/pymc-examples/examples/generalized_linear_models/GLM-binomial-regression.html
+
+https://timeseriesreasoning.com/contents/binomial-regression-model/
+
+Data sampling:
+https://towardsdatascience.com/data-sampling-methods-in-python-a4400628ea1b
+
+https://towardsdatascience.com/oversampling-and-undersampling-5e2bbaf56dcf
+
+
+Wikipedia Math Essentials Data set
+https://archive.ics.uci.edu/ml/datasets/Wikipedia+Math+Essentials
