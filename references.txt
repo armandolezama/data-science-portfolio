@@ -34,3 +34,25 @@ https://towardsdatascience.com/oversampling-and-undersampling-5e2bbaf56dcf
 
 Wikipedia Math Essentials Data set
 https://archive.ics.uci.edu/ml/datasets/Wikipedia+Math+Essentials
+
+Notebook cheatsheet
+https://www.ibm.com/docs/en/watson-studio-local/1.2.3?topic=notebooks-markdown-jupyter-cheatsheet
+https://www.datacamp.com/tutorial/tutorial-jupyter-notebook
+
+
+UTF-8 Math Operators:
+https://www.w3schools.com/charsets/ref_utf_math.asp
+
+Markdown editor
+https://stackedit.io/app#
+
+Markdown guide
+https://www.markdownguide.org/basic-syntax/
+
+https://www.anychart.com/chartopedia/chart-type/sparkline-chart/
+
+https://www.anychart.com/products/anychart/gallery/Bar_Charts/Multi-Series_Bar_Chart.php
+
+https://chartio.com/learn/charts/grouped-bar-chart-complete-guide/
+
+https://docs.oracle.com/en/cloud/saas/enterprise-performance-management-common/dmepr/understanding_dual_y_axis_222x8ba01f6c.html
