@@ -56,3 +56,18 @@ https://www.anychart.com/products/anychart/gallery/Bar_Charts/Multi-Series_Bar_C
 https://chartio.com/learn/charts/grouped-bar-chart-complete-guide/
 
 https://docs.oracle.com/en/cloud/saas/enterprise-performance-management-common/dmepr/understanding_dual_y_axis_222x8ba01f6c.html
+
+https://www.statlect.com/
+
+https://www.mastersindatascience.org/
+
+https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc
+
+https://www.statisticssolutions.com/free-resources/directory-of-statistical-analyses/what-is-logistic-regression/
+
+https://www.statology.org/course-register/
+
+https://medium.com/analytics-vidhya/writing-math-equations-in-jupyter-notebook-a-naive-introduction-a5ce87b9a214
+
+Very interesting and ordered information.
+https://developers.google.com/machine-learning
