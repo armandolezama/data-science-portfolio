@@ -67,7 +67,16 @@ https://www.statisticssolutions.com/free-resources/directory-of-statistical-anal
 
 https://www.statology.org/course-register/
 
+Hw to write math equations in LaTex and Jupyter markdown
 https://medium.com/analytics-vidhya/writing-math-equations-in-jupyter-notebook-a-naive-introduction-a5ce87b9a214
 
 Very interesting and ordered information.
 https://developers.google.com/machine-learning
+
+To use in poisson and binomial examples
+https://medium.com/@andrew.chamberlain/deriving-the-poisson-distribution-from-the-binomial-distribution-840cc1668239
+
+More about LaTex:
+https://www.rollpie.com/post/595
+
+https://www.overleaf.com/learn/latex/Integrals%2C_sums_and_limits
