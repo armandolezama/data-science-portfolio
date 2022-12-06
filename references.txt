@@ -80,3 +80,7 @@ More about LaTex:
 https://www.rollpie.com/post/595
 
 https://www.overleaf.com/learn/latex/Integrals%2C_sums_and_limits
+
+
+Really interesting page:
+https://www.statisticshowto.com/
