@@ -84,3 +84,86 @@ https://www.overleaf.com/learn/latex/Integrals%2C_sums_and_limits
 
 Really interesting page:
 https://www.statisticshowto.com/
+
+Can You Master Everything?
+https://pub.towardsai.net/can-you-master-everything-a6e5721c1178
+
+https://towardsdatascience.com/intro-to-monte-carlo-simulations-using-business-examples-794fae76e832
+
+https://towardsdatascience.com/correlated-variables-in-monte-carlo-simulations-19266fb1cf29
+
+https://www.turing.com/interview-questions/artificial-intelligence
+
+https://www.projectpro.io/project-use-case/pyspark-classification-and-clustering-example?utm_source=357&utm_medium=fold2
+
+https://www.projectpro.io/project-use-case/gan-mnist-pytorch?utm_source=357&utm_medium=fold2
+
+https://www.projectpro.io/project-use-case/text-generator-model-lstm-using-amazon-sagemaker?utm_source=357&utm_medium=fold2
+
+https://www.projectpro.io/project-use-case/sql-project-for-data-wrangling-and-analysis?utm_source=357&utm_medium=fold2
+
+https://www.projectpro.io/article/machine-learning-interview-questions-and-answers-for-2021/357
+
+https://www.kdnuggets.com/2022/09/7-machine-learning-portfolio-projects-boost-resume.html
+
+MLOps aquired from the previous link:
+https://github.com/DataTalksClub/mlops-zoomcamp
+
+https://www.kdnuggets.com/2021/10/ace-data-science-interview-portfolio-projects.html
+
+https://www.kdnuggets.com/2021/02/best-data-science-project-portfolio.html
+
+https://www.kdnuggets.com/2022/01/artificial-intelligence-project-ideas-2022.html
+
+https://www.kdnuggets.com/2021/03/portfolio-guide-data-science-beginners.html
+
+https://www.kdnuggets.com/2022/06/musthaves-data-science-resume.html
+
+https://medium.com/@anna.wu9222/google-data-scientist-interview-questions-step-by-step-solutions-63b7403e2a5c
+
+https://towardsdatascience.com/how-to-know-which-statistical-test-to-use-for-hypothesis-testing-744c91685a5d
+
+https://commondataset.org/
+
+https://www.pythonfordatascience.org/home
+
+https://pub.towardsai.net/decision-trees-in-machine-learning-ml-with-python-tutorial-3bfb457bce67
+
+https://towardsai.net/p/machine-learning/how-to-build-and-train-your-first-neural-network-9a07d020c4bb
+
+https://pub.towardsai.net/a-peak-at-how-the-brain-can-perform-principal-component-analysis-241e83225e5
+
+https://towardsai.net/p/l/graph-neural-networks-for-fraud-detection-in-crypto-transactions
+
+https://medium.com/stanford-cs224w/fraud-detection-on-bitcoin-transaction-graphs-using-graph-convolutional-networks-5fc50a903687
+
+https://pub.towardsai.net/k-nearest-neighbors-knn-algorithm-tutorial-machine-learning-basics-ml-ec6756d3e0ac
+
+K-mean clustering algorithm
+https://morioh.com/p/9d4f0f31d71d?f=5c21fb01c16e2556b555ab32&fbclid=IwAR16_z5e5u9QLlw27E5UMqWgE90JtGmXFd5KKMzZy7hFg7D5sI1-i2J4u6w
+
+Sktime - Python Toolbox for Time Series: How to Implement Your Own Estimator
+https://morioh.com/p/df2f6ed06beb?f=5e44c59998b8037d03aa8178&fbclid=IwAR1OC8VZuhlu5Kn8GYjynGxjDehb45DtoDHw5daXO5Rxy7R1hvAqNeJS9vs
+
+Build your own google lens web application using python
+https://morioh.com/p/1db06e3ed210?f=5c21fb01c16e2556b555ab32&fbclid=IwAR16_z5e5u9QLlw27E5UMqWgE90JtGmXFd5KKMzZy7hFg7D5sI1-i2J4u6w
+
+Build a deep learning grammar app
+https://morioh.com/p/4dc547a4383b?f=5c21fb01c16e2556b555ab32&fbclid=IwAR0UfBxgC5s736RGc6o8DIbgzjERnL5satv3Figa81VOeJAt-ThsfEIUk8w
+
+https://towardsdatascience.com/10-examples-to-master-ggplot2-line-plots-3e43e9aec8f
+
+https://towardsdatascience.com/basic-guide-to-data-visualization-for-data-science-8e7d966bf10a
+
+https://towardsdatascience.com/3-tips-to-create-more-robust-pipelines-with-pandas-c404c52ad216
+
+https://towardsdatascience.com/data-visualization-using-python-422d7ac4cb65
+
+Data Analysis with Python - Full Course for Beginners (Numpy, Pandas, Matplotlib, Seaborn)
+https://www.youtube.com/watch?v=r-uOLxNrNk8
+
+Repo aquired from previous video (4hrs):
+https://github.com/ine-rmotr-curriculum/FreeCodeCamp-Pandas-Real-Life-Example/blob/master/Exercises_1.ipynb
+
+Full Data Science Course (12hrs):
+https://www.youtube.com/watch?v=d0bIgigcOQM
