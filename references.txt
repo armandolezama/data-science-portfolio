@@ -140,16 +140,16 @@ https://medium.com/stanford-cs224w/fraud-detection-on-bitcoin-transaction-graphs
 https://pub.towardsai.net/k-nearest-neighbors-knn-algorithm-tutorial-machine-learning-basics-ml-ec6756d3e0ac
 
 K-mean clustering algorithm
-https://morioh.com/p/9d4f0f31d71d?f=5c21fb01c16e2556b555ab32&fbclid=IwAR16_z5e5u9QLlw27E5UMqWgE90JtGmXFd5KKMzZy7hFg7D5sI1-i2J4u6w
+https://towardsdatascience.com/k-means-clustering-algorithm-applications-evaluation-methods-and-drawbacks-aa03e644b48a
 
 Sktime - Python Toolbox for Time Series: How to Implement Your Own Estimator
-https://morioh.com/p/df2f6ed06beb?f=5e44c59998b8037d03aa8178&fbclid=IwAR1OC8VZuhlu5Kn8GYjynGxjDehb45DtoDHw5daXO5Rxy7R1hvAqNeJS9vs
+https://london2022.pydata.org/cfp/talk/AHH8FE/
 
-Build your own google lens web application using python
-https://morioh.com/p/1db06e3ed210?f=5c21fb01c16e2556b555ab32&fbclid=IwAR16_z5e5u9QLlw27E5UMqWgE90JtGmXFd5KKMzZy7hFg7D5sI1-i2J4u6w
+Build your own Google Lens Landmark Detection Application using Python | Gradio | TensorFlow Hub
+https://www.youtube.com/watch?v=R7LCb6ssf3M
 
-Build a deep learning grammar app
-https://morioh.com/p/4dc547a4383b?f=5c21fb01c16e2556b555ab32&fbclid=IwAR0UfBxgC5s736RGc6o8DIbgzjERnL5satv3Figa81VOeJAt-ThsfEIUk8w
+Build a Grammar Correction Python App with Gramformer and Gradio
+https://www.youtube.com/watch?v=4htP-hmIBvc&t=2s
 
 https://towardsdatascience.com/10-examples-to-master-ggplot2-line-plots-3e43e9aec8f
 
@@ -167,3 +167,182 @@ https://github.com/ine-rmotr-curriculum/FreeCodeCamp-Pandas-Real-Life-Example/bl
 
 Full Data Science Course (12hrs):
 https://www.youtube.com/watch?v=d0bIgigcOQM
+
+How to build a machine learning model in Python from scratch
+https://www.youtube.com/watch?v=DctmeFx8s_k
+
+Using Linear Algebra to Solve Data Problems in Machine Learning
+https://morioh.com/p/4ce8b12cca67?f=5cb7d89d660c8335951ca454&fbclid=IwAR2TpaWOfch8xjRr90c9Y-elPYlrHdPj9fAHXNw2RUoIO0RAq4-0Rfw5kfU
+
+How to Automate Data Cleaning, in a Nutshell
+https://www.datasciencecentral.com/how-to-automate-data-cleaning-in-a-nutshell/
+
+A Guide to Train an Image Classification Model Using Tensorflow
+https://www.kdnuggets.com/2022/12/guide-train-image-classification-model-tensorflow.html
+
+https://towardsai.net/p/l/my-pandas-cheatsheet-for-exploratory-analysis-and-data-manipulation
+
+https://towardsai.net/p/l/build-chatgpt-like-chatbots-with-customized-knowledge-for-your-websites-using-simple-programming
+
+https://pub.towardsai.net/bernoulli-distribution-probability-tutorial-with-python-90061ee078a
+
+Julien Simon - Machine Learning 2.0 With Hugging Face | PyData London 2022
+https://www.youtube.com/watch?v=Hz4t_rAtdxg
+
+Laszlo Sragner - Arquitectura limpia: cómo estructurar sus proyectos de ML para reducir la deuda técnica
+https://www.youtube.com/watch?v=QXfsS-ZOeyA
+
+https://mltechniques.com/2022/09/29/machine-learning-dictionary/
+
+https://mltechniques.com/resources/
+
+https://pub.towardsai.net/building-neural-networks-with-python-code-and-math-in-detail-ii-bbe8accbf3d1
+
+https://www.datasimple.education/post/python-data-analysis-guided-project-spaceship-titanic-data-analysis-for-ml-level-8-31-min
+
+The Importance of Permutation in Neural Network Predictions
+https://www.kdnuggets.com/2022/12/importance-permutation-neural-network-predictions.html
+
+ANOMALY AND FRAUD MINKOWSKI DISTANCE
+https://www.youtube.com/watch?v=osr6ALsfVDo
+
+The Mathematics of Natural Selection
+https://www.youtube.com/watch?v=E3QJ8Pt9f3A
+
+Google Colab 101 Tutorial with Python — Tips, Tricks, and FAQ 
+https://towardsai.net/p/programming/google-colab-101-tutorial-with-python-tips-tricks-and-faq-7689bd4d24b4
+
+How to Determine the Optimal Number Of Clusters for K-Means with Python
+https://www.youtube.com/watch?v=imtvI5CQLm4
+
+How To Choose The Right Number of Clusters ❌ Elbow Method Explained ❌ K-Means Clustering
+https://www.youtube.com/watch?v=qs8nfzUsW5U
+
+Introduction to K-means - Choosing number of clusters
+https://www.youtube.com/watch?v=DWLoY6I6d34
+
+Python Machine Learning Projects For Beginners 2023 | Machine Learning With Python | Simplilearn
+https://www.youtube.com/watch?v=EA3X_CtIjFo
+
+Machine Learning Projects with Python
+https://www.youtube.com/watch?v=DMxpOIEa4ZA
+
+How Gradient Descent Works. Simple Explanation
+https://www.youtube.com/watch?v=Gbz8RljxIHo
+
+Course: Synthetic Data and Interpretable Machine Learning
+https://mltechniques.com/2022/12/02/course-synthetic-data-and-interpretable-machine-learning
+
+Python Website Full Tutorial - Flask, Authentication, Databases & More
+https://www.youtube.com/watch?v=dam0GPOAvVI
+
+https://towardsai.net/p/l/evolution-of-ai-and-data-science-in-2022
+
+The AI community building the future:
+https://huggingface.co/
+
+Morioh - A Mindmap Summarising Machine Learning Concepts
+https://github.com/dformoso/machine-learning-mindmap
+https://github.com/dformoso/sklearn-classification
+https://github.com/dformoso/deeplearning-mindmap
+
+Reinventing or Reusing? Home-made vs Third-party Solutions
+https://www.datasciencecentral.com/reinventing-or-reusing-home-made-vs-third-party-solutions/
+
+Data science centra:
+https://www.datasciencecentral.com/
+
+Open Data Science Conference
+https://odsc.com/boston/
+https://odsc.com/california/
+https://odsc.com/europe/
+https://odsc.com/apac/
+https://aiplus.training/
+https://opendatascience.com/
+
+Learn Data Science From These GitHub Repositories
+https://www.kdnuggets.com/2022/12/learn-data-science-github-repositories.html
+
+ROC and AUC, Clearly Explained!
+https://www.youtube.com/watch?v=4jRBRDbJemM
+
+NeuralNine repos
+https://github.com/NeuralNine
+
+Intelligent AI Chatbot in Python
+https://www.youtube.com/watch?v=1lwddP0KUEg
+
+Análisis Cluster & Componentes Principales 😀: Transformación, Visualización📊 de datos con Python.
+https://www.youtube.com/watch?v=D27ea8tqp0U
+
+Image Kernels
+https://setosa.io/ev/image-kernels/
+
+Explained Visually - Explained Visually (EV) is an experiment in making hard ideas intuitive inspired the work of Bret Victor's Explorable Explanations. Sign up to hear about the latest.
+https://setosa.io/ev/
+
+Quantile Regression as The Most Useful Alternative for Ordinary Linear Regression
+https://www.youtube.com/watch?v=Gtz8ca_4hVg
+
+Natural Language Processing (NLP) with Python — Tutorial 
+https://towardsai.net/p/nlp/natural-language-processing-nlp-with-python-tutorial-for-beginners-1f54e610a1a0
+
+How to use Youtube API to extract YT channel data with Python (Step by step)
+https://www.youtube.com/watch?v=TIZRskDMyA4
+
+How to make AI Content Generator in Python with Cohere AI - Full Tutorial Web App
+https://www.youtube.com/watch?v=TjxgmLQrDJA
+
+Implement DBSCAN Clustering and detecting OUTLIERS with Python
+https://www.youtube.com/watch?v=eq1zKgCFwkk
+
+Machine learning with Python and sklearn - Hierarchical Clustering (E-commerce dataset example)
+https://www.youtube.com/watch?v=7BPLNOMNIXM
+
+Gentle Introduction to Linear Algebra, with Spectacular Applications
+https://mltechniques.com/2022/05/31/gentle-introduction-to-linear-algebra-with-spectacular-applications/
+
+Amazing Neural Network Video Demonstration
+https://mltechniques.com/2022/04/12/amazing-neural-network-video-demonstration/
+
+A Visual Journey in What Vision-Transformers See
+https://towardsai.net/p/l/a-visual-journey-in-what-vision-transformers-see
+
+Free online courses with certificates
+https://www.mygreatlearning.com/academy?gl_blog_id=32485
+
+Introduction to Stochastic Gradient Descent
+https://www.mygreatlearning.com/blog/introduction-to-stochastic-gradient-descent/
+
+Great learning
+https://www.mygreatlearning.com/
+
+Stock Price Prediction Using Python & Machine Learning
+https://www.youtube.com/watch?v=QIUxPv5PJOY
+
+How to Choose the Best Machine Learning Technique: Comparison Table
+https://www.datasciencecentral.com/how-to-choose-the-best-machine-learning-technique-comparison-table/
+
+Python for Data Science - Course for Beginners (Learn Python, Pandas, NumPy, Matplotlib)
+https://www.youtube.com/watch?v=LHBE6Q9XlzI
+
+https://www.kdnuggets.com/getting-started-with-scikit-learn-for-classification-in-machine-learning.html
+
+Choosing Colormaps
+https://matplotlib.org/2.0.2/users/colormaps.html
+
+Introduction to GIS Analysis with GeoPandas using Python
+https://www.youtube.com/watch?v=slqZVgB8tIg
+
+Python TensorFlow for Machine Learning – Neural Network Text Classification Tutorial
+https://www.youtube.com/watch?v=VtRLrQ3Ev-U
+
+Convolutional Neural Networks (CNNs) Tutorial with Python
+https://pub.towardsai.net/convolutional-neural-networks-cnns-tutorial-with-python-417c29f0403f
+
+Keras Multiclass Classification for Deep Neural Networks with ROC and AUC (4.2)
+https://www.youtube.com/watch?v=-f3bg9dLMks
+https://github.com/jeffheaton/t81_558_deep_learning/blob/master/t81_558_class_04_2_multi_class.ipynb
+
+Video: Introduction to Machine Learning
+https://www.datasciencecentral.com/video-introduction-to-machine-learning/
