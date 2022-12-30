@@ -346,3 +346,8 @@ https://github.com/jeffheaton/t81_558_deep_learning/blob/master/t81_558_class_04
 
 Video: Introduction to Machine Learning
 https://www.datasciencecentral.com/video-introduction-to-machine-learning/
+
+https://www.cienciadedatos.net/documentos/py14-ridge-lasso-elastic-net-python.html
+
+Here are much from the algorithms that you've been memorizing
+https://www.cienciadedatos.net/
