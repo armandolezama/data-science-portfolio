@@ -351,3 +351,6 @@ https://www.cienciadedatos.net/documentos/py14-ridge-lasso-elastic-net-python.ht
 
 Here are much from the algorithms that you've been memorizing
 https://www.cienciadedatos.net/
+
+Many articles about applied statistics
+https://www.itl.nist.gov/div898/handbook/index.htm
