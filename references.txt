@@ -1,7 +1,7 @@
 Pendiente por leer:
 https://www.geeksforgeeks.org/statistical-functions-python-set-1averages-measure-central-location/?ref=rp
 
-https://machinelearningmastery.com/a-gentle-introduction-to-the-law-of-large-numbers-in-machine-learning/#:~:text=The%20law%20of%20large%20numbers%20supports%20the%20intuition%20that%20the,the%20increase%20in%20sample%20size.
+https://machinelearningmastery.com/a-gentle-introduction-to-the-law-of-large-numbers-in-machine-learning/
 
 https://www.geeksforgeeks.org/python-non-central-t-distribution-in-statistics/?ref=rp
 
