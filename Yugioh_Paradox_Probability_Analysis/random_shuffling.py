@@ -1,9 +1,10 @@
 #importing required libraries
 import random
+import copy
 
 class game_simulator:
-  def __init__(self, deck_description) -> None:
-    self.deck_description = {**deck_description}
+  def __init__(self, deck_description:dict) -> None:
+    self.deck_description = copy.deepcopy(deck_description)
     self.deck = self.deck_shuffler(self.deck_generator(deck_description))
     self.hand = []
   
@@ -14,12 +15,14 @@ class game_simulator:
 
   def update_description(self):
     for card in self.hand:
-      self.deck_description[card] = self.deck_description[card] - 1
+      self.deck_description[card]['quantity'] = self.deck_description[card]['quantity'] - 1
 
   def deck_generator(self, deck_description:dict):
     final_deck = []
+
     for key in deck_description:
-      final_deck = [*final_deck, *[key] * deck_description[key]]
+      final_deck = [*final_deck, *[key] * deck_description[key]['quantity']]
+
     return final_deck
 
   def deck_shuffler(self, deck:list):
