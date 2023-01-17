@@ -3,12 +3,18 @@ import random
 
 class game_simulator:
   def __init__(self, deck_description) -> None:
-    self.deck_description = deck_description
+    self.deck_description = {**deck_description}
     self.deck = self.deck_shuffler(self.deck_generator(deck_description))
-    self.draw(5)
+    self.hand = []
   
   def draw(self, cards:int):
-    self.hand = self.deck[:cards]
+    self.hand = [*self.hand ,*self.deck[:cards]]
+    self.deck = self.deck[cards:len(self.deck)]
+    self.update_description()
+
+  def update_description(self):
+    for card in self.hand:
+      self.deck_description[card] = self.deck_description[card] - 1
 
   def deck_generator(self, deck_description:dict):
     final_deck = []
