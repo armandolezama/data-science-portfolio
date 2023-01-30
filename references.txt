@@ -354,3 +354,9 @@ https://www.cienciadedatos.net/
 
 Many articles about applied statistics
 https://www.itl.nist.gov/div898/handbook/index.htm
+
+Violin Plots 101: Visualizing Distribution and Probability Density
+https://mode.com/blog/violin-plot-examples/#:~:text=What%20is%20a%20violin%20plot%3F,the%20density%20of%20each%20variable.
+
+Swarm plot
+https://prvnk10.medium.com/swarm-plot-4728f52b688e#:~:text=A%20swarm%20plot%20is%20another%20way%20of%20plotting%20the%20distribution,of%20a%20couple%20of%20attributes.&text=The%20'x%2Daxis'%20depicts,count%20varies%20with%20carat%20size.
