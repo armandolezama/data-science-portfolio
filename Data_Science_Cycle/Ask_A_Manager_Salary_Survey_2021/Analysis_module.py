@@ -74,11 +74,15 @@ class Data_analyzer:
   def set_continuous_variables_as_numbers(self):
     for i in range(len(self.salary_survey_data.col_5)):
       if isinstance(self.salary_survey_data.col_5[i], str):
-        self.salary_survey_data.col_5[i] = float(self.salary_survey_data.col_5[i].replace(",", ""))
+        current_value = self.salary_survey_data.col_5[i]
+        current_value = float(current_value.replace(",", ""))
+        self.salary_survey_data.loc.__setitem__((slice(None), ('col_5', i)), current_value)
 
     for i in range(len(self.salary_survey_data.col_6)):
       if isinstance(self.salary_survey_data.col_6[i], str):
-        self.salary_survey_data.col_6[i] = float(self.salary_survey_data.col_6[i].replace(",", ""))
+        current_value = self.salary_survey_data.col_6[i]
+        current_value = float(current_value.replace(",", ""))
+        self.salary_survey_data.__setitem__((slice(None), ('col_6', i), current_value))
   
   def replace_nan_values(self):
     self.salary_survey_data.col_5.fillna(0, inplace=True)
