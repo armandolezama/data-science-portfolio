@@ -84,3 +84,42 @@ class Data_analyzer:
     self.salary_survey_data.col_5.fillna(0, inplace=True)
     self.salary_survey_data.col_6.fillna(0, inplace=True)
     self.salary_survey_data.fillna('-99', inplace=True)
+  
+  def create_correlation_matrix(self):
+    salary_survey_features_names = [*self.categorical_variables_names, *self.continuous_variables_names]
+
+    salary_survey_features = self.salary_survey_data.loc[:, salary_survey_features_names].copy()
+
+    salary_survey_features.rename(columns = {
+      salary_survey_features_names[0] : 'age',
+      salary_survey_features_names[1] : 'industry',
+      salary_survey_features_names[2] : 'job title',
+      salary_survey_features_names[3] : 'currency',
+      salary_survey_features_names[4] : 'country',
+      salary_survey_features_names[5] : 'us state',
+      salary_survey_features_names[6] : 'city',
+      salary_survey_features_names[7] : 'total years of work',
+      salary_survey_features_names[8] : 'current field years of work',
+      salary_survey_features_names[9] : 'education level',
+      salary_survey_features_names[10] : 'gender',
+      salary_survey_features_names[11] : 'annual salary',
+      salary_survey_features_names[12] : 'monetary compensation',
+    }, inplace=True)
+
+    return associations(
+      dataset = salary_survey_features,
+      nominal_columns = [
+          'age',
+          'industry',
+          'job title',
+          'currency',
+          'country',
+          'us state',
+          'city',
+          'total years of work',
+          'current field years of work',
+          'education level',
+          'gender',
+      ],
+      figsize=(10,10)
+    )
