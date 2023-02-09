@@ -127,3 +127,14 @@ class Data_analyzer:
       ],
       figsize=(10,10)
     )
+  
+  def get_sorted_data_dictionary(self, as_data_frame = True):
+    created_df:pd.DataFrame
+    if(as_data_frame):
+      created_df = pd.DataFrame.from_dict(self.data_dictionary, orient='index')
+      created_df = created_df.sort_values(by=['values_count'])
+    else:
+      created_df = self.data_dictionary
+
+    return created_df
+    
