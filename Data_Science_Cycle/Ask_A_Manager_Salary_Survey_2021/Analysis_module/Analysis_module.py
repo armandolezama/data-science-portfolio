@@ -235,4 +235,35 @@ class Data_analyzer:
     )
 
     return crosstab_instance
+  
+  def create_multi_crosstabs(self, grid:list = [], use_full_data:bool = False, data_name:str = ''):
+
+    crosstab_multiplot_fig = plt.figure(figsize = (30,25))
+
+    grid_len = range(len(grid))
+
+    if(isinstance(grid[0], list)):
+
+      for nested_list_index in grid_len:
+      
+        nested_list = grid[nested_list_index]
+      
+        for nested_tuple_index in range(len(nested_list)):
+
+          fixed_index = nested_tuple_index + 1
+          index_increment = (len(nested_list) * nested_list_index)
+          ax_position = fixed_index + index_increment
+          ax_instance = crosstab_multiplot_fig.add_subplot(len(grid), len(nested_list), ax_position)
+          x_var, y_var = nested_list[nested_tuple_index]
+          crosstab_instance = self.create_crosstab_instance(x_cat=x_var, y_cat=y_var, use_full_data=use_full_data, data_name=data_name)
+          crosstab_instance.plot(kind='bar', stacked=True, ax=ax_instance)
+  
+    else:
+
+      for nested_tuple_index in grid_len:
+      
+        ax_instance = crosstab_multiplot_fig.add_subplot(1, len(grid), nested_tuple_index + 1)
+        x_var, y_var = grid[nested_tuple_index]
+        crosstab_instance = self.create_crosstab_instance(x_cat=x_var, y_cat=y_var, use_full_data=use_full_data, data_name=data_name)
+        crosstab_instance.plot(kind='bar', stacked=True, ax=ax_instance)
 
