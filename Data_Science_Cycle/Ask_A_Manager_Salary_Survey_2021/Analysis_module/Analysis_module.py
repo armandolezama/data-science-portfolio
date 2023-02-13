@@ -13,6 +13,7 @@ class Data_analyzer:
     self.salary_survey_colnames:dict = {}
     self.categorical_variables_names:list = []
     self.continuous_variables_names:list = []
+    self.categorical_short_answers:list = []
 
     self.start_config()
 
@@ -26,9 +27,12 @@ class Data_analyzer:
 
     self.set_continuous_variables_names()
 
+    self.set_categorical_short_answers()
+
     self.set_continuous_variables_as_numbers()
 
     self.replace_nan_values()
+
     
   
   def create_data_dictionary(self):
@@ -71,18 +75,76 @@ class Data_analyzer:
       self.salary_survey_colnames[self.original_colnames[6]],
     ]
   
+  def set_categorical_short_answers(self):
+    self.categorical_short_answers =  {
+      # This corresponds to 'age' variable
+      self.categorical_variables_names[0] : {
+        '25-34' : '25-34',
+        '45-54' : '45-54',
+        '35-44' : '35-44',
+        '18-24' : '18-24',
+        '65 or over' : '>=65',
+        '55-64' : '55-64',
+        'under 18' : '<=18',
+      },
+
+      # This corresponds to 'total years of work' variable
+      self.categorical_variables_names[7] : {
+        '5-7 years': '5-7',
+        '2 - 4 years': '2-4',
+        '8 - 10 years': '8-10',
+        '21 - 30 years': '21-30',
+        '11 - 20 years': '11-20',
+        '41 years or more': '>=41',
+        '31 - 40 years': '31-40',
+        '1 year or less': '<=1',
+      },
+
+      # This corresponds to 'current field years of work' variable
+      self.categorical_variables_names[8] : {
+        '5-7 years': '5-7',
+        '2 - 4 years': '2-4',
+        '21 - 30 years': '21-30',
+        '11 - 20 years': '11-20',
+        '8 - 10 years': '8-10',
+        '1 year or less': '<=1',
+        '31 - 40 years': '31-40',
+        '41 years or more': '>=41',
+      },
+
+      # This corresponds to 'education level' variable
+      self.categorical_variables_names[9] : {
+        "Master's degree" : 'Master',
+        'College degree' : 'College',
+        'PhD' : 'PhD',
+        '-99' : 'Missing',
+        'Some college' : 'Some',
+        'High School' : 'High school',
+        'Professional degree (MD, JD, etc.)' : 'Professional',
+      },
+
+      # This corresponds to 'gender' variable
+      self.categorical_variables_names[10] : {
+        'Woman' : 'Woman',
+        'Man' : 'Man',
+        'Non-binary' : 'Non-binary',
+        '-99' : 'Missing',
+        'Other or prefer not to answer' : 'Other',
+        'Prefer not to answer' : 'Prefer not answer',
+      },
+    }
+
   def set_continuous_variables_as_numbers(self):
-    for i in range(len(self.salary_survey_data.col_5)):
+    for i in range(len(self.salary_survey_data.index)):
       if isinstance(self.salary_survey_data.col_5[i], str):
         current_value = self.salary_survey_data.col_5[i]
         current_value = float(current_value.replace(",", ""))
         self.salary_survey_data.loc.__setitem__((slice(None), ('col_5', i)), current_value)
 
-    for i in range(len(self.salary_survey_data.col_6)):
       if isinstance(self.salary_survey_data.col_6[i], str):
         current_value = self.salary_survey_data.col_6[i]
         current_value = float(current_value.replace(",", ""))
-        self.salary_survey_data.__setitem__((slice(None), ('col_6', i), current_value))
+        self.salary_survey_data.loc.__setitem__((slice(None), ('col_6', i)), current_value)
   
   def replace_nan_values(self):
     self.salary_survey_data.col_5.fillna(0, inplace=True)
@@ -137,4 +199,3 @@ class Data_analyzer:
       created_df = self.data_dictionary
 
     return created_df
-    
