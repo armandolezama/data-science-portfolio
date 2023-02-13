@@ -13,7 +13,10 @@ class Data_analyzer:
     self.salary_survey_colnames:dict = {}
     self.categorical_variables_names:list = []
     self.continuous_variables_names:list = []
-    self.categorical_short_answers:list = []
+    self.categorical_short_description:list = []
+
+    #This variable will contain references to any subset created
+    self.subset_data:dict = {}
 
     self.start_config()
 
@@ -27,7 +30,7 @@ class Data_analyzer:
 
     self.set_continuous_variables_names()
 
-    self.set_categorical_short_answers()
+    self.set_categorical_short_description()
 
     self.set_continuous_variables_as_numbers()
 
@@ -75,62 +78,73 @@ class Data_analyzer:
       self.salary_survey_colnames[self.original_colnames[6]],
     ]
   
-  def set_categorical_short_answers(self):
-    self.categorical_short_answers =  {
-      # This corresponds to 'age' variable
+  def set_categorical_short_description(self):
+    self.categorical_short_description =  {
+
       self.categorical_variables_names[0] : {
-        '25-34' : '25-34',
-        '45-54' : '45-54',
-        '35-44' : '35-44',
-        '18-24' : '18-24',
-        '65 or over' : '>=65',
-        '55-64' : '55-64',
-        'under 18' : '<=18',
+        'name' : 'Age',
+        'answers' : {
+          '25-34' : '25-34',
+          '45-54' : '45-54',
+          '35-44' : '35-44',
+          '18-24' : '18-24',
+          '65 or over' : '>=65',
+          '55-64' : '55-64',
+          'under 18' : '<=18',
+        }
       },
 
-      # This corresponds to 'total years of work' variable
       self.categorical_variables_names[7] : {
-        '5-7 years': '5-7',
-        '2 - 4 years': '2-4',
-        '8 - 10 years': '8-10',
-        '21 - 30 years': '21-30',
-        '11 - 20 years': '11-20',
-        '41 years or more': '>=41',
-        '31 - 40 years': '31-40',
-        '1 year or less': '<=1',
+        'name' : 'Total years of work',
+        'answers' : {
+          '5-7 years': '5-7',
+          '2 - 4 years': '2-4',
+          '8 - 10 years': '8-10',
+          '21 - 30 years': '21-30',
+          '11 - 20 years': '11-20',
+          '41 years or more': '>=41',
+          '31 - 40 years': '31-40',
+          '1 year or less': '<=1',
+        }
       },
 
-      # This corresponds to 'current field years of work' variable
       self.categorical_variables_names[8] : {
-        '5-7 years': '5-7',
-        '2 - 4 years': '2-4',
-        '21 - 30 years': '21-30',
-        '11 - 20 years': '11-20',
-        '8 - 10 years': '8-10',
-        '1 year or less': '<=1',
-        '31 - 40 years': '31-40',
-        '41 years or more': '>=41',
+        'name' : 'Current field years of work',
+        'answers' : {
+          '5-7 years': '5-7',
+          '2 - 4 years': '2-4',
+          '21 - 30 years': '21-30',
+          '11 - 20 years': '11-20',
+          '8 - 10 years': '8-10',
+          '1 year or less': '<=1',
+          '31 - 40 years': '31-40',
+          '41 years or more': '>=41',
+        }
       },
 
-      # This corresponds to 'education level' variable
       self.categorical_variables_names[9] : {
-        "Master's degree" : 'Master',
-        'College degree' : 'College',
-        'PhD' : 'PhD',
-        '-99' : 'Missing',
-        'Some college' : 'Some',
-        'High School' : 'High school',
-        'Professional degree (MD, JD, etc.)' : 'Professional',
+        'name' : 'Education level',
+        'answers' :{
+          "Master's degree" : 'Master',
+          'College degree' : 'College',
+          'PhD' : 'PhD',
+          '-99' : 'Missing',
+          'Some college' : 'Some',
+          'High School' : 'High school',
+          'Professional degree (MD, JD, etc.)' : 'Professional',
+        }
       },
 
-      # This corresponds to 'gender' variable
       self.categorical_variables_names[10] : {
-        'Woman' : 'Woman',
-        'Man' : 'Man',
-        'Non-binary' : 'Non-binary',
-        '-99' : 'Missing',
-        'Other or prefer not to answer' : 'Other',
-        'Prefer not to answer' : 'Prefer not answer',
+        'name' : 'Gender',
+        'answers' : {
+          'Woman' : 'Woman',
+          'Man' : 'Man',
+          'Non-binary' : 'Non-binary',
+          '-99' : 'Missing',
+          'Other or prefer not to answer' : 'Other',
+          'Prefer not to answer' : 'Prefer not answer',
+        }
       },
     }
 
@@ -199,3 +213,26 @@ class Data_analyzer:
       created_df = self.data_dictionary
 
     return created_df
+  
+  def create_crosstab_instance(self, x_cat, y_cat, use_full_data:bool = False, data_name:str = ''):
+    crosstab_instance:pd.DataFrame
+
+    if(use_full_data):
+      crosstab_instance = pd.crosstab(self.salary_survey_data[x_cat], self.salary_survey_data[y_cat])
+    else:
+      crosstab_instance = pd.crosstab(self.subset_data[data_name][x_cat],self.subset_data[data_name][y_cat])
+    
+    crosstab_instance.rename(
+      index=self.categorical_short_description[x_cat]['answers'],
+      columns=self.categorical_short_description[y_cat]['answers'],
+      inplace=True,
+    )
+
+    crosstab_instance.rename_axis(
+      index=self.categorical_short_description[x_cat]['name'],
+      columns=self.categorical_short_description[y_cat]['name'],
+      inplace=True,
+    )
+
+    return crosstab_instance
+
