@@ -267,3 +267,5 @@ class Data_analyzer:
         crosstab_instance = self.create_crosstab_instance(x_cat=x_var, y_cat=y_var, use_full_data=use_full_data, data_name=data_name)
         crosstab_instance.plot(kind='bar', stacked=True, ax=ax_instance)
 
+  def create_new_subset(self, data_name:str, data_extractor, use_full_set:bool=False, subset_name:str=''):
+    self.subset_data[data_name] = data_extractor(self.salary_survey_data) if use_full_set else data_extractor(self.subset_data[subset_name])
