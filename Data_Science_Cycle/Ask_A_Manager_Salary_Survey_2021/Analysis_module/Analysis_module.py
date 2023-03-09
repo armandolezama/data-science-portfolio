@@ -32,11 +32,9 @@ class Data_analyzer:
 
     self.set_categorical_short_description()
 
-    self.set_continuous_variables_as_numbers()
-
     self.replace_nan_values()
 
-    
+    self.set_continuous_variables_as_numbers()    
   
   def create_data_dictionary(self):
 
@@ -149,16 +147,14 @@ class Data_analyzer:
     }
 
   def set_continuous_variables_as_numbers(self):
-    for i in range(len(self.salary_survey_data.index)):
-      if isinstance(self.salary_survey_data.col_5[i], str):
-        current_value = self.salary_survey_data.col_5[i]
-        current_value = float(current_value.replace(",", ""))
-        self.salary_survey_data.loc.__setitem__((slice(None), ('col_5', i)), current_value)
 
-      if isinstance(self.salary_survey_data.col_6[i], str):
-        current_value = self.salary_survey_data.col_6[i]
-        current_value = float(current_value.replace(",", ""))
-        self.salary_survey_data.loc.__setitem__((slice(None), ('col_6', i)), current_value)
+    self.salary_survey_data.col_5 = self.salary_survey_data.col_5.str.replace(",", "")
+    self.salary_survey_data = self.salary_survey_data.astype(
+      {
+        'col_5': 'int64',
+        'col_6': 'int64',
+      }
+    )
   
   def replace_nan_values(self):
     self.salary_survey_data.col_5.fillna(0, inplace=True)
@@ -220,7 +216,7 @@ class Data_analyzer:
     if(use_full_data):
       crosstab_instance = pd.crosstab(self.salary_survey_data[x_cat], self.salary_survey_data[y_cat])
     else:
-      crosstab_instance = pd.crosstab(self.subset_data[data_name][x_cat],self.subset_data[data_name][y_cat])
+      crosstab_instance = pd.crosstab(self.subset_data[data_name][x_cat], self.subset_data[data_name][y_cat])
     
     crosstab_instance.rename(
       index=self.categorical_short_description[x_cat]['answers'],
@@ -266,6 +262,19 @@ class Data_analyzer:
         x_var, y_var = grid[nested_tuple_index]
         crosstab_instance = self.create_crosstab_instance(x_cat=x_var, y_cat=y_var, use_full_data=use_full_data, data_name=data_name)
         crosstab_instance.plot(kind='bar', stacked=True, ax=ax_instance)
+
+  def create_box_plot(self, ax_instance, x_cat, y_cat, use_full_data:bool = False, data_subset:str = ''):
+    boxplot_data = self.salary_survey_data if(use_full_data) else self.subset_data[data_subset]
+    boxplot = sns.countplot(data=boxplot_data, x = x_cat, y = y_cat, ax=ax_instance)
+    boxplot.set(ylabel='', xlabel='')
+    boxplot.set_xticklabels
+
+  def create_violin_plot(self, ax_instance, x_cat, y_cat, use_full_data:bool = False, data_subset:str = ''):
+    self
+
+  def create_bar_plot(self, ax_instance, x_cat, y_cat, use_full_data:bool = False, data_subset:str = ''):
+    self
+
 
   def create_new_subset(self, data_name:str, data_extractor, use_full_set:bool=False, subset_name:str=''):
     self.subset_data[data_name] = data_extractor(self.salary_survey_data) if use_full_set else data_extractor(self.subset_data[subset_name])
